@@ -20,7 +20,7 @@ public class ArchitectureResource {
             Process p = Runtime.getRuntime().exec("uname -a");
             String uname = new BufferedReader(new InputStreamReader(p.getInputStream())).readLine();
             String[] array = uname.split(" ");
-            String arch = array[array.length-1];
+            String arch = array[array.length-2];
             return Response.status(200).entity(arch).build();
         } catch (IOException e) {
             e.printStackTrace();

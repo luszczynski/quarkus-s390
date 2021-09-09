@@ -11,11 +11,11 @@ $(function () {
     'use strict'
 
     $.get( "arch", function( data ) {
-        if(data == "x86_64") {
-            $('#img-arch').html("<img src='imgs/aws.png' />");
-        }
-        else if(data == "s390x") {
+        if(data == "s390x") {
             $('#img-arch').html("<img src='imgs/s390.png' />");
+        }
+        else {
+            $('#img-arch').html("<img src='imgs/aws.png' />");
         }
         console.log("data = ", data);
     });
