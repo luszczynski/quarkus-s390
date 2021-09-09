@@ -14,7 +14,7 @@ $(function () {
         if(data == "x86_64") {
             $('#img-arch').html("<img src='imgs/aws.png' />");
         }
-        else if(data == "s390") {
+        else if(data == "s390x") {
             $('#img-arch').html("<img src='imgs/s390.png' />");
         }
         console.log("data = ", data);
